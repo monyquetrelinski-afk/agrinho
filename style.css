@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7f1;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#2e7d32,#81c784);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+nav{
+    background:#1b5e20;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#c8e6c9;
+}
+
+section{
+    padding:60px 10%;
+}
+
+section h2{
+    color:#2e7d32;
+    margin-bottom:20px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#388e3c;
+    margin-bottom:10px;
+}
+
+.estatisticas{
+    background:#e8f5e9;
+    text-align:center;
+}
+
+.numero{
+    font-size:3rem;
+    color:#1b5e20;
+    font-weight:bold;
+}
+
+button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+#mensagem{
+    margin-top:20px;
+    font-size:1.1rem;
+    color:#2e7d32;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
