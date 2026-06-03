@@ -1,87 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte - Sustentabilidade</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agro Forte 2050</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-    <h1>🌱 Agro Forte</h1>
-    <p>Sustentabilidade e Equilíbrio entre Campo e Cidade</p>
+    <h1>🌱 AGRO FORTE 2050</h1>
+    <p>
+        O futuro sustentável depende da integração entre tecnologia,
+        produção agrícola inteligente e cidades conectadas.
+    </p>
 </header>
 
-<nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#beneficios">Benefícios</a>
-    <a href="#impacto">Impacto</a>
-</nav>
+<section>
 
-<section id="sobre">
-    <h2>Sobre o Projeto</h2>
-
+<div class="card">
+    <h2>🚜 Agricultura Inteligente</h2>
     <p>
-        O Agro Forte promove a integração entre o campo e a cidade,
-        valorizando a produção sustentável, a preservação ambiental
-        e o desenvolvimento econômico.
+        Sensores, drones, inteligência artificial e internet das coisas
+        permitem monitorar plantações em tempo real.
     </p>
+</div>
+
+<div class="card">
+    <h2>🏙️ Equilíbrio entre Campo e Cidade</h2>
+    <p>
+        Campo e cidade trabalham juntos para produzir alimentos,
+        tecnologia e desenvolvimento sustentável.
+    </p>
+</div>
+
+<div class="card">
+    <h2>🔋 Futuro Verde</h2>
+    <p>
+        Energias renováveis e agricultura sustentável garantem um futuro melhor.
+    </p>
+</div>
+
 </section>
 
-<section id="beneficios">
-    <h2>Benefícios da Sustentabilidade</h2>
+<section>
 
-    <div class="cards">
+<h2 class="titulo-centro">🌎 Ecossistema Sustentável</h2>
 
-        <div class="card">
-            <h3>🌾 Produção Responsável</h3>
-            <p>
-                Uso consciente dos recursos naturais para garantir
-                produtividade e preservação.
-            </p>
-        </div>
+<div class="ecosystem">
+    <div class="circle">🚜</div>
+    <div class="arrow">⇄</div>
+    <div class="circle">🤖</div>
+    <div class="arrow">⇄</div>
+    <div class="circle">🏙️</div>
+</div>
 
-        <div class="card">
-            <h3>💧 Economia de Água</h3>
-            <p>
-                Tecnologias modernas reduzem desperdícios e aumentam
-                a eficiência no campo.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>🏙️ Integração Campo-Cidade</h3>
-            <p>
-                Fortalecimento da conexão entre produtores rurais e
-                consumidores urbanos.
-            </p>
-        </div>
-
-    </div>
 </section>
 
-<section id="impacto" class="estatisticas">
-    <h2>Impacto Positivo</h2>
+<section>
 
-    <div class="numero" id="contador">0</div>
+<h2 class="titulo-centro">📊 Indicadores do Futuro</h2>
 
-    <p>
-        Famílias beneficiadas por práticas sustentáveis
-    </p>
+<div class="stats">
 
-    <button onclick="mostrarMensagem()">
-        Saiba Mais
-    </button>
+<div class="stat">
+<h3>95%</h3>
+<p>Uso eficiente da água</p>
+</div>
 
-    <p id="mensagem"></p>
+<div class="stat">
+<h3>80%</h3>
+<p>Energia renovável</p>
+</div>
+
+<div class="stat">
+<h3>70%</h3>
+<p>Redução de desperdícios</p>
+</div>
+
+<div class="stat">
+<h3>100%</h3>
+<p>Conexão digital campo-cidade</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="quiz">
+
+<h2>🧠 Quiz Agro Sustentável</h2>
+
+<p><strong>1.</strong> Qual tecnologia ajuda a monitorar plantações?</p>
+
+<label>
+<input type="radio" name="q1" value="certo">
+Drones e sensores inteligentes
+</label><br>
+
+<label>
+<input type="radio" name="q1" value="errado">
+Máquinas a vapor
+</label><br>
+
+<label>
+<input type="radio" name="q1" value="errado">
+Telégrafo agrícola
+</label>
+
+<br><br>
+
+<p><strong>2.</strong> Por que o campo e a cidade precisam trabalhar juntos?</p>
+
+<label>
+<input type="radio" name="q2" value="certo">
+Porque dependem um do outro
+</label><br>
+
+<label>
+<input type="radio" name="q2" value="errado">
+Não existe relação
+</label><br>
+
+<label>
+<input type="radio" name="q2" value="errado">
+Somente a cidade é importante
+</label>
+
+<br><br>
+
+<button onclick="corrigirQuiz()">
+Ver Resultado
+</button>
+
+<div id="resultado"></div>
+
+</div>
+
 </section>
 
 <footer>
-    <p>
-        © 2025 Agro Forte | Sustentabilidade e Equilíbrio entre Campo e Cidade
-    </p>
+🌱 Agro Forte 2050 • Tecnologia • Sustentabilidade
 </footer>
 
 <script src="script.js"></script>

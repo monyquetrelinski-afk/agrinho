@@ -1,26 +1,44 @@
-// Contador animado
+function corrigirQuiz(){
 
-let valor = 0;
-const alvo = 5000;
+    let pontos = 0;
 
-const contador = setInterval(() => {
+    let q1 = document.querySelector(
+        'input[name="q1"]:checked'
+    );
 
-    valor += 50;
+    let q2 = document.querySelector(
+        'input[name="q2"]:checked'
+    );
 
-    document.getElementById("contador").innerText = valor;
-
-    if (valor >= alvo) {
-        clearInterval(contador);
+    if(!q1 || !q2){
+        document.getElementById("resultado").innerHTML =
+        "⚠️ Responda todas as perguntas.";
+        return;
     }
 
-}, 20);
+    if(q1.value === "certo"){
+        pontos++;
+    }
 
+    if(q2.value === "certo"){
+        pontos++;
+    }
 
-// Função do botão
+    let mensagem = "";
 
-function mostrarMensagem() {
+    if(pontos === 2){
+        mensagem =
+        "🏆 Excelente! Você domina o tema Agro Sustentável.";
+    }
+    else if(pontos === 1){
+        mensagem =
+        "🌿 Muito bem! Você acertou metade das questões.";
+    }
+    else{
+        mensagem =
+        "📚 Continue estudando sobre sustentabilidade e inovação no campo.";
+    }
 
-    document.getElementById("mensagem").innerHTML =
-        "🌱 O futuro depende da união entre tecnologia, sustentabilidade e cooperação entre o campo e a cidade.";
-
+    document.getElementById("resultado").innerHTML =
+    `Você fez ${pontos}/2 pontos.<br><br>${mensagem}`;
 }
